@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAS-TECH </title>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="{% static "css/base.css" %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nabvar nabvar-expand-lg nabvar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">RAS-TECH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ma-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="" class="nav-link-active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Article</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-2" type="search" placeholder="search..." aria-label="search"/>
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Fin de la Navbar -->
+
+    <!-- Sidebar Gauche -->
+    <div class="sidebar-left p-3">
+        <h5></h5>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="" class="nav-link"></a></li>
+            <li class="nav-item"><a href="" class="nav-link"></a></li>
+            <li class="nav-item"><a href="" class="nav-link"></a></li>
+        </ul>
+    </div>
+    <!-- Fin Sidebar Gauche -->
+
+    <!-- Contenu principal -->
+    <div class="main-content">
+        {% block content %}{% endblock content %}
+    </div>
+    <!-- Fin contenu -->
+
+    <!-- Sidebar Gauche -->
+    <div class="sidebar-right p-3">
+        <h5>Activite recentes</h5>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="" class="nav-link">Article 1 publie</a></li>
+            <li class="list-group-item"><a href="" class="nav-link">Article 1 publie</a></li>
+            <li class="list-group-item"><a href="" class="nav-link">Mise a jour des services</a></li>
+        </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
