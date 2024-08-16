@@ -63,8 +63,15 @@ pip install -r requirements.txt
 ```
 cette commande installera django et et ssa suite pour notre projet
 maintenant
-Lancer le serveur de developpement django 
 
+#### Appliquer les migrations et Lancer le serveur de developpement django 
+```bash
+python backend/manage.py migrate
+```
+###### placez-vous dans le repertoire backend:
+```bash
+cd backend &&python manage.py migrate
+```
 ###### si vous etes toujours dans le repertoire racine 'tech4all'
 ```bash
 python backend/manage.py runserver
