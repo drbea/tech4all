@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECH4ALL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            color: #ddd;
+        }
+        .search-bar {
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .search-bar-btn {
+            padding: 5px 10px;
+            background-color: #555;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar-left, .sidebar-right {
+            width: 20%;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .main-content {
+            width: 60%;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer form {
+            margin-bottom: 20px;
+        }
+        footer input[type="email"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        footer input[type="submit"] {
+            padding: 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>TECH4ALL</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-laptop-code"></i> Tech</a>
+            <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="#"><i class="fas fa-user-plus"></i> Sign up</a>
+        </div>
+        <div class="search">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button class="search-bar-btn">Search</button>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="sidebar-left">
+            <h2>Services</h2>
+            <ul>
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 3</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>Your content goes here...</p>
+        </div>
+
+        <div class="sidebar-right">
+            <h2>Recent Activities</h2>
+            <ul>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+                <li><a href="#">Activity 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Subscribe to our Newsletter</h3>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
