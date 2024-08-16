@@ -53,10 +53,10 @@ ou si voulez vous placer dans le dossier backend faites:
 python manage.py runserver
 ```
 
-\n\n
 
 ##### petite notes pour les linux users
-### ou si voulez utliser l'environement envTech qui existe, mais je suis sous linux donc ne l'utiliser que si vous etes sous une distro linux
+### ou si voulez utliser l'environement envTech qui existe, 
+### mais je suis sous linux donc ne l'utiliser que si vous etes sous une distro linux
 ```git
 source .envTech/bin/activate
 ```
