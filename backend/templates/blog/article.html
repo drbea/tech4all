@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ article.title }}{% endblock title %}
+
+{% block content %} 
+    <div>
+        <div>
+          {% for article  in articles %}
+            <h3> {{article.title}}</h3> <hr>
+                {{article.content|safe}}
+            
+          {% endfor %}
+        </div>
+    </div>
+{% endblock %}
