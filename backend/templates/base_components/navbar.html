@@ -22,7 +22,7 @@
                 </li>
                 {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link popover-signup" href=""  data-bs-html="true"><i class="fas fa-user"></i>{{ user.username }}</a>
+                        <a class="nav-link popover-signup" href="{% url "accounts:profil" %}"  data-bs-html="true"><i class="fas fa-user"></i>{{ user.username }}</a>
                     </li>
                 {% else %}
                     <li class="nav-item">
