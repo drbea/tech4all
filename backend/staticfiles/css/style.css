@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar-brand {
+ 
+    font: 2em ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+/* 
+* .container est un element qui contient tout le contenu
+* de la page, il est positionne en haut de la page avec
+* un padding de 20px pour laisser un peu d'espace entre
+* le contenu et le bord de la page
+* sa hauteur est fixe a 100% de la hauteur de la page
+* pour qu'il occupe tout l'espace disponible
+*/
+.container {
+    padding: 20px;
+    height: 100%;
+}
+
+
+.navbar-custom {
+    background-color: #333;
+    color: white;
+}
+.navbar-custom a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.navbar-custom a:hover {
+    color: #ddd;
+}
+.search-bar {
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+.search-bar-btn {
+    padding: 5px 10px;
+    background-color: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+footer {
+    background-color: #333;
+    color: white;
+    /* padding: 20px; */
+    text-align: center;
+    /* margin-top: auto; */
+
+}
+footer form {
+    margin-bottom: 20px;
+}
+footer input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+footer input[type="submit"] {
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer a {
+    color: white;
+    margin: 0 10px;
+}
+footer a:hover {
+    color: #ddd;
+}

@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="{% url "home:index" %}">TECH4ALL</a>
+        
+        <!-- Toggler for smaller screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white;"><i class="fas fa-bars"></i></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url "home:index" %}"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link popover-tech" href="#" data-bs-toggle="popover" data-bs-content="<a href='#'>Article</a><br><a href='#'>Blog</a><br><a href='#'>News</a>" data-bs-html="true"><i class="fas fa-laptop-code"></i> Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link popover-contact" href="#" data-bs-toggle="popover" data-bs-content="<a href='#'>Contact Us</a><br><a href='#'>About Us</a>" data-bs-html="true"><i class="fas fa-envelope"></i> Contact</a>
+                </li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link popover-signup" href=""  data-bs-html="true"><i class="fas fa-user"></i>{{ user.username }}</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link popover-signup" href="{% url "account:login" %}" data-bs-toggle="popover" data-bs-content="<a href='#'>Sign up</a><br><a href='#'>Sign in</a>" data-bs-html="true"><i class="fas fa-user-plus"></i> Sign up</a>
+                    </li>
+                {% endif %}
+                <li class="nav-item">
+                    <!-- Search -->
+                    <form class="d-flex">
+                        <input type="text" class="search-bar" placeholder="Search...">
+                        <button class="search-bar-btn">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
